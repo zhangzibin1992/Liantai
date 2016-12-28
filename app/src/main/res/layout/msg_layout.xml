@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20px"
+    android:paddingRight="20px"
+    android:paddingBottom="20px"
+    android:background="@color/gray">
+
+    <TextView android:id="@+id/tv_order_numberses"
+        style="@style/msg_layout_style"
+        android:text="@string/order_numbers"/>
+
+    <TextView android:id="@+id/tv_equipment_name"
+        style="@style/msg_layout_style"
+        android:text="@string/equipment_name"
+        android:layout_below="@+id/tv_order_numberses"/>
+
+    <TextView android:id="@+id/tv_state"
+        style="@style/msg_layout_style"
+        android:text="@string/tv_status"
+        android:layout_below="@+id/tv_equipment_name"/>
+
+    <TextView android:id="@+id/tv_order_numberseses"
+        style="@style/msg_layout_style_blue"
+        android:text="M20161108_001"
+        android:layout_toRightOf="@+id/tv_order_numberses"/>
+
+    <TextView android:id="@+id/tv_equipment_names"
+        style="@style/msg_layout_style_blue"
+        android:text="SLA_TEST"
+        android:layout_below="@+id/tv_order_numberseses"
+        android:layout_toRightOf="@+id/tv_order_numberses"/>
+
+    <TextView android:id="@+id/tv_states"
+        style="@style/msg_layout_style_blue"
+        android:text="就绪"
+        android:layout_below="@+id/tv_equipment_names"
+        android:layout_toRightOf="@+id/tv_order_numberses"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="@color/darkgray"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="20px">
+        <ImageView android:id="@+id/img_3d"
+            android:layout_width="240px"
+            android:layout_height="320px"
+            android:src="@drawable/ic_3d"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+             />
+
+        <TextView android:id="@+id/tv_import_queue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导入队列"
+            android:textSize="36px"
+            android:layout_centerHorizontal="true"
+            android:background="@color/green"
+            android:textColor="@color/black"
+            android:layout_marginTop="10px"
+            android:padding="6px"
+            android:layout_below="@+id/img_3d" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="460px"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <TextView android:id="@+id/tv_create_time"
+            style="@style/tv_order_black"
+            android:text="@string/create_time"/>
+
+        <TextView android:id="@+id/tv_time"
+            style="@style/tv_order_blue"
+            android:layout_toRightOf="@+id/tv_create_time"
+            android:text="2016-11-10 18:57:47"/>
+
+        <TextView android:id="@+id/tv_order_number"
+            style="@style/tv_order_black"
+            android:text="@string/order_number"
+            android:layout_alignRight="@+id/tv_create_time"
+            android:layout_below="@+id/tv_create_time"/>
+
+        <TextView android:id="@+id/tv_orders"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_time"
+            android:layout_toRightOf="@+id/tv_create_time"
+            android:text="M20161108_001"/>
+
+
+        <TextView android:id="@+id/tv_equipment_number"
+            style="@style/tv_order_black"
+            android:text="@string/equipment_number"
+            android:layout_alignRight="@+id/tv_create_time"
+            android:layout_below="@+id/tv_order_number"/>
+
+        <TextView android:id="@+id/tv_equipment_numbers"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_orders"
+            android:layout_toRightOf="@+id/tv_create_time"
+            android:text="SLA_TEST"/>
+
+        <TextView android:id="@+id/tv_print_way"
+            style="@style/tv_order_black"
+            android:text="@string/print_way"
+            android:layout_alignRight="@+id/tv_create_time"
+            android:layout_below="@+id/tv_equipment_number"/>
+
+        <TextView android:id="@+id/tv_print_ways"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_equipment_numbers"
+            android:layout_toRightOf="@+id/tv_create_time"
+            android:text="RS4500"/>
+
+        <TextView android:id="@+id/tv_status"
+            style="@style/tv_order_black"
+            android:text="@string/status"
+            android:layout_alignRight="@+id/tv_create_time"
+            android:layout_below="@+id/tv_print_way"/>
+
+
+        <TextView android:id="@+id/tv_statuses"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_print_ways"
+            android:layout_toRightOf="@+id/tv_create_time"
+            android:text="绑定设备"/>
+
+        <TextView android:id="@+id/tv_printing_material"
+            style="@style/tv_order_black"
+            android:text="@string/printing_material"
+            android:layout_alignRight="@+id/tv_create_time"
+            android:layout_below="@+id/tv_status"/>
+
+        <TextView android:id="@+id/tv_printing_materials"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_statuses"
+            android:layout_toRightOf="@+id/tv_create_time"
+            android:text="8000"/>
+
+        <TextView android:id="@+id/tv_late_delivery"
+            style="@style/tv_order_black"
+            android:text="@string/late_delivery"
+            android:layout_alignRight="@+id/tv_create_time"
+            android:layout_below="@+id/tv_printing_material"/>
+
+        <TextView android:id="@+id/tv_late_deliverys"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_printing_materials"
+            android:layout_toRightOf="@+id/tv_create_time"
+            android:text="2017-11-10 18:57:47"/>
+
+        <TextView android:id="@+id/tv_order_author"
+            style="@style/tv_order_black"
+            android:text="@string/order_author"
+            android:layout_alignRight="@+id/tv_create_time"
+            android:layout_below="@+id/tv_late_delivery"/>
+
+        <TextView android:id="@+id/tv_order_authors"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_late_deliverys"
+            android:layout_toRightOf="@+id/tv_create_time"
+            android:text="wusq"/>
+
+        <TextView android:id="@+id/tv_note"
+            style="@style/tv_order_black"
+            android:text="@string/note"
+            android:layout_alignRight="@+id/tv_create_time"
+            android:layout_below="@+id/tv_order_author"/>
+
+        <TextView android:id="@+id/tv_notes"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_order_authors"
+            android:layout_toRightOf="@+id/tv_create_time"
+            android:text="   "/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

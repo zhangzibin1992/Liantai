@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:orientation="vertical"
+    android:layout_marginBottom="40px">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:src="@drawable/ic_item_pic"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"/>
+
+
+        <TextView android:id="@+id/tv_sla_name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20px"
+            android:text="SLA stayreal"
+            android:textSize="50px"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_right"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#708090"
+        android:layout_marginBottom="30px"/>
+
+    <include layout="@layout/layout_device_resttime_"/>
+
+
+    <ProgressBar android:id="@+id/item_progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30px"
+        android:layout_height="30px"
+        android:max="1024"
+        android:progress="500"
+        android:progressDrawable="@drawable/progress_device"
+        />
+
+    <include layout="@layout/layout_device_progress"/>
+
+    <Button android:id="@+id/btn_sfree"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center"
+        android:textSize="40px"
+        android:layout_marginTop="40px"
+        android:textColor="@color/white"
+        android:text="设备状态：空闲"
+        android:background="#FFB019"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

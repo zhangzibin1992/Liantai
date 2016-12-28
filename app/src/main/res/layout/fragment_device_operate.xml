@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8px"
+    android:paddingRight="8px"
+    android:background="#30243D">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/linear_kiting_show"
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:background="@drawable/user_shape"
+        android:orientation="vertical"
+        android:layout_marginTop="12px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/linear_kiting_show1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40px"
+            >
+            <TextView
+                android:text="生成时间："
+                android:textSize="32px"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:id="@+id/tv_show_create"
+                android:layout_weight="1"
+                android:layout_marginLeft="40px"/>
+
+            <TextView
+
+                android:id="@+id/tv_operate_start_time"
+                style="@style/tv_time_selection"
+                android:layout_marginRight="140px"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/linear_kiting_show2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+            <TextView
+                android:text="截止时间："
+                android:textSize="32px"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:id="@+id/tv_show_end"
+                android:layout_weight="1"
+                android:layout_marginLeft="40px"/>
+
+            <TextView
+
+                android:id="@+id/tv_show_stop_operate_time"
+                style="@style/tv_time_selection" />
+
+            <TextView
+                android:text="查看"
+                android:textSize="40px"
+                android:layout_width="100px"
+                android:layout_height="60px"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_like"
+                android:background="#5F52A1"
+                android:layout_weight="0"
+                android:layout_marginRight="24px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:text="ListView,待实现"
+        android:textSize="56px"
+        android:background="#dd2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,46 @@
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/order_tab"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@color/darkgray"
+            app:tabTextColor="#FCC008"
+            app:tabIndicatorHeight="4px"
+            app:tabIndicatorColor="#b00"
+            app:tabTextAppearance="@style/AppTheme_design_data"
+            app:tabSelectedTextColor="#f44"
+            app:tabMode = "scrollable"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <include layout="@layout/search_layout"/>
+    <!--<android.support.v4.view.ViewPager
+        android:id="@+id/order_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f00"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+    </android.support.v4.view.ViewPager>-->
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

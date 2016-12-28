@@ -1,0 +1,174 @@
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+
+            <include layout="@layout/msg_layout"/>
+
+            <TextView
+                style="@style/tv_Theme_style"
+                android:text="@string/order_msg"/>
+
+            <include layout="@layout/item_viewpager_layout"/>
+
+            <TextView
+                style="@style/tv_Theme_style"
+                android:text="@string/file_msg"/>
+
+            <TextView android:id="@+id/tv_file_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink"
+                android:paddingLeft="40px"
+                android:paddingTop="20px"
+                android:paddingBottom="20px"
+                android:text="UPS文件名:    150.cl"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="@color/darkgray"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgray"
+                android:orientation="horizontal">
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20px"
+                    android:paddingBottom="20px"
+                    android:layout_weight="1">
+
+
+                    <TextView android:id="@+id/tv_initialize_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/initialize_state"
+                        android:textSize="30px"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <ImageView android:id="@+id/img_light"
+                        android:layout_width="30px"
+                        android:layout_height="30px"
+                        android:src="@drawable/ic_light"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tv_initialize_state"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="4px"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20px"
+                    android:layout_marginBottom="20px"
+                    android:background="@color/white"/>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20px"
+                    android:paddingBottom="20px"
+                    android:layout_weight="1">
+
+
+                    <TextView android:id="@+id/tv_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_start_time"
+                        android:textSize="30px"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView android:id="@+id/tv_start_times"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20px"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/tv_start_time"
+                        android:text="00:00:00"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="4px"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20px"
+                    android:layout_marginBottom="20px"
+                    android:background="@color/white"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20px"
+                    android:paddingBottom="20px"
+                    android:layout_weight="1">
+
+
+                    <TextView android:id="@+id/tv_remain_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_remain_time"
+                        android:textSize="30px"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView android:id="@+id/tv_remain_times"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20px"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/tv_remain_time"
+                        android:text="00:00:00"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/darkgray"/>
+
+            <include layout="@layout/control_item_layout"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/darkgray"/>
+
+            <include layout="@layout/msg_status_layout"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/darkgray"/>
+
+            <include layout="@layout/msg_lv_layout"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+</com.zhy.autolayout.AutoFrameLayout>

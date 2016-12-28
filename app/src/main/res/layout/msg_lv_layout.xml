@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500px"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/btn_Equipment_operation_records"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/sel_button_msg"
+            android:text="@string/Equipment_operation_records"/>
+
+        <Button android:id="@+id/btn_error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sel_button_msg"
+            android:textColor="@color/white"
+            android:text="@string/error_message"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ListView android:id="@+id/lv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

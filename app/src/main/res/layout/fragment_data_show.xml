@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#30243D"
+    android:paddingTop="8px"
+    android:paddingLeft="5px"
+    android:paddingRight="5px">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/linear_data_show1"
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:background="@drawable/user_shape"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/linear_show1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30px"
+           >
+            <TextView
+                android:text="起始时间："
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:id="@+id/tv_show_start"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_show_start_time"
+                style="@style/tv_time_selection"
+                android:layout_marginRight="140px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/linear_show2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+            <TextView
+                android:text="结束时间："
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="80px"
+                android:id="@+id/tv_show_stop"
+                android:layout_weight="1"
+                android:layout_marginLeft="40px"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_show_stop_time"
+                style="@style/tv_time_selection"/>
+
+            <TextView
+                android:text="分析"
+                android:textSize="32px"
+                android:layout_width="100px"
+                android:layout_height="60px"
+                android:gravity="center"
+                android:id="@+id/tv_analyze"
+                android:background="#5F52A1"
+                android:layout_weight="0"
+                android:layout_marginRight="24px"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="40px"
+        android:layout_width="match_parent"
+        android:layout_height="720px"
+        android:orientation="vertical"
+        android:background="@drawable/user_shape">
+        <TextView
+        android:text="使用率(/小时)"
+        android:textSize="36px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="100px"
+        android:textColor="#3F51B5"
+        android:id="@+id/tv_data1" />
+        <TextView
+            android:text="48"
+            android:textSize="36px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="40px"
+            android:id="@+id/tv_data2" />
+        <TextView
+            android:text="40"
+            android:textSize="36px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="40px"
+            android:id="@+id/tv_data3" />
+        <TextView
+            android:text="32"
+            android:textSize="36px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="40px"
+            android:id="@+id/tv_data4" />
+        <TextView
+            android:text="24"
+            android:textSize="36px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="40px"
+            android:id="@+id/tv_data5" />
+        <TextView
+            android:text="16"
+            android:textSize="36px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="40px"
+            android:id="@+id/tv_data6" />
+        <TextView
+            android:text="8"
+            android:textSize="36px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="50px"
+            android:id="@+id/tv_data7" />
+        <TextView
+            android:text="0"
+            android:textSize="36px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="50px"
+            android:id="@+id/tv_data8" />
+
+        <TextView
+            android:text="--------------------------------------------------------------"
+            android:textSize="36px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:id="@+id/tv_data9" />
+        <TextView
+            android:text="设备名"
+            android:textSize="46px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_data10" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

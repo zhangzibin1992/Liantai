@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_logo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_logo"
+    tools:context="com.liantai.ui.LogoActivity">
+
+
+    <ImageView
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logo"/>
+
+    <EditText android:id="@+id/edt_username"
+        android:layout_width="550px"
+        android:layout_height="70px"
+        android:background="@drawable/bg_alpha"
+        android:textColorHint="#fff"
+        android:hint="@string/login_username"
+        android:drawableLeft="@drawable/users"
+        android:textColor="@color/white"
+        android:paddingLeft="5px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="600px" />
+
+    <EditText android:id="@+id/edt_password"
+        android:layout_width="550px"
+        android:layout_height="70px"
+        android:background="@drawable/bg_alpha"
+        android:textColorHint="#fff"
+        android:hint="@string/login_password"
+        android:drawableLeft="@drawable/passwords"
+        android:textColor="@color/white"
+        android:paddingLeft="5px"
+        android:layout_alignTop="@+id/edt_username"
+        android:layout_alignLeft="@+id/edt_username"
+        android:layout_alignStart="@+id/edt_username"
+        android:layout_marginTop="100px" />
+
+    <Button android:id="@+id/btn_login"
+        android:layout_width="550px"
+        android:layout_height="80px"
+        android:layout_below="@+id/edt_password"
+        android:layout_alignLeft="@+id/edt_password"
+        android:layout_alignStart="@+id/edt_password"
+        android:layout_marginTop="30px"
+        android:text="@string/btn_login"
+        android:background="@drawable/btn_select"
+        android:textSize="20sp"/>
+
+
+    <View android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="250px"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:textColor="@color/white"
+        android:layout_marginTop="15px"
+        android:layout_centerHorizontal="true"
+        android:text="联泰3D打印客户端"
+        android:textSize="35px"/>
+</com.zhy.autolayout.AutoRelativeLayout>

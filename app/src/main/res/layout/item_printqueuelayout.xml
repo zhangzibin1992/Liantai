@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <ImageView android:id="@+id/img_3d_print2"
+            android:layout_width="240px"
+            android:layout_height="320px"
+            android:src="@drawable/ic_3d"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView android:id="@+id/tv_selecting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已选中"
+            android:layout_below="@+id/img_3d_print2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="480px"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="0">
+
+        <TextView android:id="@+id/tv_print_order"
+            style="@style/tv_order_black"
+            android:text="    订单编号:"/>
+
+        <TextView android:id="@+id/tv_print_orders"
+            style="@style/tv_order_blue"
+            android:layout_toRightOf="@+id/tv_print_order"
+            android:text="M20161108_01"/>
+
+        <TextView android:id="@+id/tv_print_ceruser"
+            style="@style/tv_order_black"
+            android:text="创建人:"
+            android:layout_alignRight="@+id/tv_print_order"
+            android:layout_below="@+id/tv_print_order"/>
+
+        <TextView android:id="@+id/tv_print_cerusers"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_print_orders"
+            android:layout_toRightOf="@+id/tv_print_order"
+            android:text="wusq"/>
+
+
+        <TextView android:id="@+id/tv_print_UPS"
+            style="@style/tv_order_black"
+            android:text="UPS文件名:"
+            android:layout_alignRight="@+id/tv_print_order"
+            android:layout_below="@+id/tv_print_cerusers"/>
+
+        <TextView android:id="@+id/tv_print_UPSs"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_print_cerusers"
+            android:layout_toRightOf="@+id/tv_print_order"
+            android:text="  "/>
+
+        <TextView android:id="@+id/tv_print_state"
+            style="@style/tv_order_black"
+            android:text="状态:"
+            android:layout_alignRight="@+id/tv_print_UPS"
+            android:layout_below="@+id/tv_print_UPS"/>
+
+        <TextView android:id="@+id/tv_print_states"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_print_UPS"
+            android:layout_toRightOf="@+id/tv_print_state"
+            android:text="等待打印"/>
+
+        <TextView android:id="@+id/tv_print_date"
+            style="@style/tv_order_black"
+            android:text="最晚交期:"
+            android:layout_alignRight="@+id/tv_print_order"
+            android:layout_below="@+id/tv_print_state"/>
+
+
+        <TextView android:id="@+id/tv_print_dates"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_print_states"
+            android:layout_toRightOf="@+id/tv_print_date"
+            android:text="2016-11-10 18:57:11"/>
+
+        <TextView android:id="@+id/tv_print_time"
+            style="@style/tv_order_black"
+            android:text="模拟时间:"
+            android:layout_alignRight="@+id/tv_print_date"
+            android:layout_below="@+id/tv_print_date"/>
+
+        <TextView android:id="@+id/tv_print_times"
+            style="@style/tv_order_blue"
+            android:layout_below="@+id/tv_print_date"
+            android:layout_toRightOf="@+id/tv_print_time"
+            android:text="  "/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray"/>
+</com.zhy.autolayout.AutoLinearLayout>

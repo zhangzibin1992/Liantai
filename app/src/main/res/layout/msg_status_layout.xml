@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20px"
+    android:orientation="horizontal">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <TextView android:id="@+id/tv_current_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_current_height"
+            android:textSize="30px"
+            android:textColor="@color/black"
+            />
+
+        <TextView android:id="@+id/tv_current_heights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30px"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/tv_current_height"
+            android:textColor="@color/blue"
+            />
+
+        <TextView android:id="@+id/tv_support_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_support_speed"
+            android:textSize="30px"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_current_height"
+            android:textColor="@color/black"
+            />
+
+        <TextView android:id="@+id/tv_support_speeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="20px"
+            android:textSize="30px"
+            android:layout_below="@+id/tv_current_height"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/tv_current_height"
+            android:textColor="@color/blue"
+            />
+
+        <TextView android:id="@+id/tv_fill_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_fill_speed"
+            android:textSize="30px"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_support_speed"
+            android:textColor="@color/black"
+            />
+
+        <TextView android:id="@+id/tv_fill_speeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="20px"
+            android:textSize="15dp"
+            android:layout_below="@+id/tv_support_speeds"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/tv_current_height"
+            android:textColor="@color/blue"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <TextView android:id="@+id/tv_all_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_all_height"
+            android:textSize="30px"
+            android:textColor="@color/black"
+            />
+
+        <TextView android:id="@+id/tv_all_heights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15dp"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/tv_all_height"
+            android:textColor="@color/blue"
+            />
+
+        <TextView android:id="@+id/tv_outline_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_outline_speed"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_all_height"
+            android:textSize="30px"
+            android:textColor="@color/black"
+            />
+
+        <TextView android:id="@+id/tv_outline_speeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_all_height"
+            android:layout_toRightOf="@+id/tv_outline_speed"
+            android:textColor="@color/blue"
+            />
+
+
+        <TextView android:id="@+id/tv_scanlinespace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_scanlinespace"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_outline_speed"
+            android:textSize="30px"
+            android:textColor="@color/black"
+            />
+
+        <TextView android:id="@+id/tv_scanlinespaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15dp"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_outline_speeds"
+            android:layout_toRightOf="@+id/tv_scanlinespace"
+            android:textColor="@color/blue"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

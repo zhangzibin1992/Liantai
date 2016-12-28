@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="60px"
+    android:layout_marginBottom="30px"
+    android:background="@drawable/user_shape">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/line_device1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px"
+            >
+            <TextView
+                android:text="制作订单编号"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_device_number"
+                android:layout_weight="1"
+                android:gravity="right" />
+            <TextView
+                android:text="M20161108_001"
+                android:textSize="32px"
+                android:textColor="#398BFB"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_show_create"
+                android:layout_weight="1" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/line_device2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+                android:text="打印时间"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_device_print_time"
+                android:layout_weight="1"
+                android:gravity="right" />
+            <TextView
+                android:text="15:57:35"
+                android:textSize="32px"
+                android:textColor="#398BFB"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_show_print_time"
+                android:layout_weight="1" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/line_device3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+                android:text="剩余时间"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_device_free_time"
+                android:layout_weight="1"
+                android:gravity="right" />
+            <TextView
+                android:text="15:57:35"
+                android:textSize="32px"
+                android:textColor="#398BFB"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_show_free_time"
+                android:layout_weight="1" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/line_device4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+                android:text="总高度"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_device_height"
+                android:layout_weight="1"
+                android:gravity="right" />
+            <TextView
+                android:text="1580"
+                android:textSize="32px"
+                android:textColor="#398BFB"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_show_height"
+                android:layout_weight="1" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/line_device5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+                android:text="打印高度"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_device_print_height"
+                android:layout_weight="1"
+                android:gravity="right" />
+            <TextView
+                android:text="59"
+                android:textSize="32px"
+                android:textColor="#398BFB"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_show_print_height"
+                android:layout_weight="1" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/line_device6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+                android:text="功率"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_device_power"
+                android:layout_weight="1"
+                android:gravity="right" />
+            <TextView
+                android:text="68"
+                android:textSize="32px"
+                android:textColor="#398BFB"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_show_power"
+                android:layout_weight="1" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/line_device7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+                android:text="液位"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_device_level"
+                android:layout_weight="1"
+                android:gravity="right" />
+            <TextView
+                android:text="68"
+                android:textSize="32px"
+                android:textColor="#398BFB"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_show_level"
+                android:layout_weight="1" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/line_device8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+                android:text="XPos"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_device_XPos"
+                android:layout_weight="1"
+                android:gravity="right" />
+            <TextView
+                android:text=""
+                android:textSize="32px"
+                android:textColor="#398BFB"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_show_XPos"
+                android:layout_weight="1" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/line_device9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+                android:text="ZPos"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_device_ZPos"
+                android:layout_weight="1"
+                android:gravity="right" />
+            <TextView
+                android:text=""
+                android:textSize="32px"
+                android:textColor="#398BFB"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_show_ZPos"
+                android:layout_weight="1" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/line_device10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+                android:text="LPos"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_device_LPos"
+                android:layout_weight="1"
+                android:gravity="right"/>
+            <TextView
+                android:text=""
+                android:textSize="32px"
+                android:textColor="#398BFB"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_show_LPos"
+                android:layout_weight="1"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/line_device11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+                android:text="记录操作时间"
+                android:textSize="32px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_device_oper_time"
+                android:layout_weight="1"
+                android:gravity="right" />
+            <TextView
+                android:text="2016/11/08 15:57:35"
+                android:textSize="32px"
+                android:textColor="#398BFB"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_show_oper_time"
+                android:layout_weight="1"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    </HorizontalScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

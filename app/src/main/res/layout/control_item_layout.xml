@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20px"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn_control_start"
+            android:layout_width="190px"
+            android:layout_height="190px"
+            android:background="@drawable/sel_ctrl_start"/>
+
+        <Button android:id="@+id/btn_control_suspended"
+            android:layout_width="190px"
+            android:layout_height="190px"
+            android:layout_marginLeft="400px"
+            android:background="@drawable/sel_ctrl_suspend"/>
+
+        <TextView android:id="@+id/tv_control_start"
+            android:layout_width="190px"
+            android:layout_height="wrap_content"
+            android:text="开始打印"
+            android:gravity="center"
+            android:layout_marginTop="3px"
+            android:layout_below="@+id/btn_control_start"
+            android:textColor="@color/black"
+            android:textSize="38px"
+            />
+
+        <TextView android:id="@+id/tv_control_suspended"
+            android:layout_width="190px"
+            android:layout_height="wrap_content"
+            android:text="暂停打印"
+            android:gravity="center"
+            android:layout_marginTop="3px"
+            android:layout_marginLeft="400px"
+            android:layout_below="@+id/btn_control_start"
+            android:textColor="@color/black"
+            android:textSize="38px"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn_control_stop"
+            android:layout_width="190px"
+            android:layout_height="190px"
+            android:background="@drawable/sel_ctrl_stop"/>
+
+        <Button android:id="@+id/btn_control_simulation"
+            android:layout_width="190px"
+            android:layout_height="190px"
+            android:layout_marginLeft="400px"
+            android:background="@drawable/sel_ctrl_silumation"/>
+
+
+        <TextView android:id="@+id/tv_control_stop"
+            android:layout_width="190px"
+            android:layout_height="wrap_content"
+            android:text="停止打印"
+            android:gravity="center"
+            android:layout_marginTop="3px"
+            android:layout_below="@+id/btn_control_stop"
+            android:textColor="@color/black"
+            android:textSize="38px"
+            />
+
+        <TextView android:id="@+id/tv_control_simulation"
+            android:layout_width="190px"
+            android:layout_height="wrap_content"
+            android:text="模拟打印"
+            android:gravity="center"
+            android:layout_marginTop="3px"
+            android:layout_marginLeft="400px"
+            android:layout_below="@+id/btn_control_simulation"
+            android:textColor="@color/black"
+            android:textSize="38px"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
